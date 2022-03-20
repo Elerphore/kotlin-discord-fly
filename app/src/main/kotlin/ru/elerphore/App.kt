@@ -3,15 +3,19 @@
  */
 package ru.elerphore
 
-class App {
-    val greeting: String
-        get() {
-            return "Hello World!"
-        }
-}
+import io.ktor.client.*
+import io.ktor.client.engine.cio.*
+import io.ktor.client.request.*
+import io.ktor.client.statement.*
+import ru.elerphore.DiscordClient
 
-fun main() {
-    println(App().greeting)
+suspend fun main() {
+    println(System.getenv().get("WEBHOOK_TOKEN"))
+    println(System.getenv().get("APP_ID"))
 
-    DiscordClient().testing()
+    val client = HttpClient(CIO)
+    val response: HttpResponse = client.get("https://google.com")
+    println(response.status)
+
+//    DiscordClient().testing()
 }
