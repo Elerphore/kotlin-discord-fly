@@ -8,4 +8,4 @@
  */
 
 rootProject.name = 'k-discord-fly'
-include('app', 'server')
+include('app', 'wrapper')

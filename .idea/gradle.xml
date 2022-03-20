@@ -9,16 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/server" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/server" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/server" />
+            <option value="$PROJECT_DIR$/wrapper" />
           </set>
         </option>
       </GradleProjectSettings>
