@@ -11,4 +11,6 @@ repositories {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
+
+    implementation "io.ktor:ktor-client-jackson:1.6.8"
 }

@@ -5,27 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68cd7031-a2d1-464d-a4e6-dbd1fa096086" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/kotlin/ru/server/App.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/src/main/kotlin/ru/fly/DiscordClient.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapper/src/main/kotlin/ru/fly/data/Webhook.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrapper/src/main/kotlin/ru/fly/data/WebhookContent.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/ru/elerphore/App.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/kotlin/ru/elerphore/AppTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/kotlin/ru/server/AppTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/kotlin/ru/elerphore/DiscordClient.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/kotlin/ru/elerphore/data/WebhookMessage.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/ru/server/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/kotlin/ru/server/App.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrapper/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/wrapper/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrapper/src/main/kotlin/ru/fly/data/Webhook.kt" beforeDir="false" afterPath="$PROJECT_DIR$/wrapper/src/main/kotlin/ru/fly/data/Webhook.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Data Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -68,6 +53,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager">
     <configuration name="AppKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
@@ -96,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647780912741</updated>
-      <workItem from="1647780914444" duration="1045000" />
+      <workItem from="1647780914444" duration="4549000" />
     </task>
     <servers />
   </component>

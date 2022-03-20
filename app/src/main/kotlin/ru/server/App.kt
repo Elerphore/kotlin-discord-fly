@@ -9,25 +9,30 @@ import io.ktor.client.engine.cio.*
 import io.ktor.client.features.json.*
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
+import io.ktor.http.*
 import ru.fly.data.Webhook
+import ru.fly.data.WebhookContent
 import java.text.DateFormat
 
 suspend fun main() {
     val appId: String = System.getenv()["APP_ID"].toString()
     val webhookToken: String = System.getenv()["WEBHOOK_TOKEN"].toString()
 
-    val webHook = Webhook(appId = appId, token = webhookToken);
+    val webHook = Webhook(appId = appId, token = webhookToken)
+    val webhookContent: WebhookContent = WebhookContent("Some text, just for fun, for now, lol.")
 
-    println(webHook)
+    webHook.content = webhookContent
 
-    val client = HttpClient(CIO) {
-        install(JsonFeature) {
-            serializer = JacksonSerializer() {
-                enable(SerializationFeature.INDENT_OUTPUT)
-                dateFormat = DateFormat.getDateInstance()
-            }
+    val client = HttpClient(CIO)
+
+    val response: HttpResponse = client.post("https://discordapp.com/api/webhooks/$appId/$webhookToken") {
+        headers {
+            append(HttpHeaders.Accept, "application/json")
+            append(HttpHeaders.ContentType, "application/json")
         }
+
+        contentType(ContentType.Application.Json)
+        body = webHook.json()
     }
-    val response: HttpResponse = client.get("https://discordapp.com/api/webhooks/$appId/$webhookToken")
     println(response.status)
 }
